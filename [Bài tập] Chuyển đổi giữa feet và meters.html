@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Length Converter</h2>
+<p>Type a value in the Feet field to convert the value to Meters:</p>
+
+<p>
+    <label>Feet</label>
+    <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)"
+           onchange="LengthConverter(this.value)">
+</p>
+<p>
+    <label>Feet</label>
+    <input id="inputMeter" type="number" placeholder="Meter" oninput="LengthConverterr(this.value)"
+           onchange="LengthConverterr(this.value)">
+</p>
+
+
+<script>
+    function LengthConverter(valNum) {
+        document.getElementById("inputMeter").value= valNum/3.2808;
+    }
+    function LengthConverterr(valNum) {
+        document.getElementById("inputFeet").value= valNum*3.2808;
+    }
+</script>
+
+</body>
+</html>
